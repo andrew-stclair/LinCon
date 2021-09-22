@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  webtop:
+    build: .
+    container_name: webtop
+    privileged: true
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Australia/Melbourne
+    volumes:
+      - ./home:/config
+    ports:
+      - 3000:3000
+    shm_size: "2gb"
+    restart: unless-stopped
+    env_file:
+      - webtop.env
+    mem_limit: 4gb
+    cpu_percent: 50

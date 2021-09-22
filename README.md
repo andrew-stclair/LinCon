@@ -1,6 +1,6 @@
 # Linux desktop in a container
 
-Based almost entirely on linuxserver.io's webtop ubuntu-xfce containers
+Based almost entirely on [linuxserver.io's webtop ubuntu-xfce containers](https://github.com/linuxserver/docker-webtop/tree/ubuntu-xfce)
 
 ## Configuration and building
 
